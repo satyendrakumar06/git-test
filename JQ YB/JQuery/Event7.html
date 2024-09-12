@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add class & Remove Class</title>
+    <style>
+        #box{
+            padding: 10px;
+            width: 50%;
+            border: 2px solid #000;
+        }
+
+        .first{
+            background: tan;
+        }
+
+        .second{
+            background: pink;
+        }
+        h1{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQuery Class Methods</h1>
+    <div id="box">
+       <h2>Test Box</h2>
+       <p>Lorem ipsum, dolor<span> sit amet consectetur</span> adipisicing.</p>
+    </div>
+    <br>
+    <button id="addbutton">Add Class</button>
+    <button id="removebutton">Remove Class</button>
+    <button id="togglebutton">Toggle Class</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $('#addbutton').click(function(){
+             $('#box,h1').addClass("first second");
+        });
+
+        $('#removebutton').click(function(){
+             $('#box').removeClass("second");
+        });
+
+        $('#togglebutton').click(function(){
+             $('#box').toggleClass("second");
+        });
+    </script>
+</body>
+</html>

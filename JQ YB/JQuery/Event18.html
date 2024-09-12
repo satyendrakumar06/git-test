@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width & Height</title>
+    <style>
+      body{
+          font-family: arial;
+      }
+
+      #box{
+          padding: 10px;
+          width: 40%;
+          border: 10px solid #000;
+          background: lightgreen;
+          border-radius: 20px;
+      }
+    </style>
+</head>
+<body>
+    <h1>JQuery Width & Height Methods</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing. amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur adipisicing. amet consectetur adipisicing.</p>
+        </div>
+        <br>
+     <button id="widthBtn">Width</button>   
+     <button id="heightBtn">Height</button>  
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+     <script>
+        $(document).ready(function(){
+            $('#widthBtn').click(function(){
+
+                $('#box').width("400px");
+              console.clear();
+              console.log("width:" + $('#box').width());
+              console.log("innerWidth:" + $('#box').innerWidth());
+              console.log("outerWidth:" + $('#box').outerWidth());
+              console.log("outerWidth(true):" + $('#box').outerWidth(true));
+            });
+
+            $('#heightBtn').click(function(){
+
+                $('#box').height("500px");
+              console.clear();
+              console.log("height:" + $('#box').height());
+              console.log("innerHeight:" + $('#box').innerHeight());
+              console.log("outerHeight:" + $('#box').outerHeight());
+              console.log("outerHeight(true):" + $('#box').outerHeight(true));
+            });
+        });
+     </script>
+</body>
+</html>

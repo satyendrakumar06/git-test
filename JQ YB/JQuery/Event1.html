@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+    <style>
+      #box{
+           width: 100%;
+           margin: 20PX;
+           padding: 30px;
+           width: 300px;
+           height: 100px;
+           border: 1px solid red;
+           border-radius: 90px 0PX 90PX 0PX;
+           text-align: center;
+           display: inline-flex;
+           flex-wrap: wrap;
+           overflow: hidden;
+           line-height: 1.5;
+           display: inline-table;
+           
+      }
+      h1{
+        margin-left: 20px;
+        
+      }
+      h2{
+        margin-top: 0px;
+        text-align: center;
+        
+      }
+    </style>
+</head>
+<body>
+
+    <h1>Hello Wavexpay</h1>
+    <div id="box" class="test">
+      
+        <h2>Test box</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, perspiciatis?</p>
+
+     
+    </div>
+    
+    <div id="box" class="test">
+      
+        <h2>Test box</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, perspiciatis?</p>
+        </div>
+
+       
+    <div id="box" class="test">
+      
+        <h2>Test box</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, perspiciatis?</p>
+
+    </div>
+
+    <div id="box" class="test" style="margin-left: 220px;">
+      
+        <h2>Test box</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, perspiciatis?</p>
+
+    </div>
+
+    <div id="box" class="test" style="margin-left: 80px;">
+      
+        <h2>Test box</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, perspiciatis?</p>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function (){
+            $('#box').click(function (){
+              $('#box').css('background-color','green');
+             
+            });
+
+            $('#box').dblclick(function (){
+              $('#box').css('background-color','orange');
+             
+            });
+
+            $('#box').contextmenu(function (){
+              $('#box').css('background-color','blue');
+             
+            });
+
+            $('#box').mouseenter(function (){
+              $('#box').css('background-color','tan');
+             
+            });
+
+            $('#box').mouseleave(function (){
+              $('#box').css('background-color','purple');
+             
+            });
+
+        });
+    </script>
+</body>
+</html>

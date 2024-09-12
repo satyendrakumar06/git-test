@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Effect</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+
+        #box{
+            background: pink;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is keyboard effect</h1>
+   
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minima et minus. Debitis fugit assumenda porro ducimus facilis quos exercitationem aliquid voluptate perspiciatis, deserunt sed optio omnis veritatis modi maiores sunt corporis atque odit odio illo amet beatae velit provident unde! Dolor fugiat cumque incidunt aliquam, repellat dignissimos enim asperiores.</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('body').keypress(function(){
+              $('body').css('background-color','orange');
+            });
+
+            $('body').keydown(function(){
+              $('body').css('background-color','blue');
+            });
+
+            $('body').keyup(function(){
+              $('body').css('background-color','green');
+            });
+        });
+    </script>
+</body>
+</html>

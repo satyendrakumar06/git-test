@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siblings Methods</title>
+
+    <style>
+        #first{
+            border: 1px solid #000;
+            width: 40%;
+            padding: 10px;
+            background: lightgreen;
+        }
+
+        #second{
+            border: 1px solid #000;
+            width: 40%;
+            padding: 10px;
+            background: lightblue;
+        }
+   </style>
+</head>
+<body>
+   <h1>JQuery Filtering Methods</h1>
+
+   <div id="first">
+         <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, rerum.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, rerum.</p>
+   </div>
+
+   <ul>
+    <li>Apple</li>
+    <li>Orange</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+   </ul>
+
+   <div id="second">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, rerum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, rerum.</p>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+           $('ul li').eq(2).css('background','gold');
+        });
+    </script>
+</body>
+</html>

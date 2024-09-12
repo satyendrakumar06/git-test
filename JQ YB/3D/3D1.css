@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Asap", sans-serif;
+  background-color: #e0ffff;
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #e0ffff;
+}
+.logo {
+  height: 45px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  height: 40px;
+  line-height: 43px;
+  margin: 3px;
+  padding: 0px 22px;
+  display: flex;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 1px;
+  transition: all ease 0.2s;
+}
+nav ul li a:hover {
+  background-color: #c3d9d9;
+  color: #ffffff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.content {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.img-card {
+  width: 300px;
+  height: 300px;
+}
+.main-text {
+  width: 500px;
+}
+.main-text h1 {
+  font-size: 4rem;
+  color: #1c3548;
+  margin: 0px 0px 10px 0px;
+  line-height: 50px;
+}
+.main-text p {
+  color: #333;
+  font-size: 1.5rem;
+}
+.main-text .btn {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  background-color: #c3d9d9;
+  border-radius: 20px;
+  transition: all ease 0.5s;
+}
+.main-text .btn:hover {
+  background-color: #e0ffff;
+  box-shadow: inset 0px 10px 30px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+#cards,
+#neon,
+#neumorph {
+  width: 100%;
+  padding: 50px 0px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+.text-card {
+  width: 310px;
+  height: 350px;
+  background-color: #c3d9d9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  transition: all ease 0.5s;
+}
+.text-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.35);
+}
+.text-card p {
+  color: #333;
+  font-size: 1rem;
+  text-align: center;
+}
+#neon {
+  background-color: #1c3548;
+  box-shadow: inset 5px 5px 20px #00c2cb, inset 5px 5px 20px #fff;
+}
+.neon-card {
+  width: 310px;
+  height: 350px;
+  background-color: #22232e;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0px 5px 20px #00c2cb, 0px 5px 20px #fff;
+  transition: all ease 0.5s;
+}
+.neon-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 30px #fff;
+}
+.neon-card h2 {
+  color: #fff;
+}
+.neon-card p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+#neumorph {
+  background-color: #dde1e7;
+}
+.neu-card {
+  width: 300px;
+  height: 350px;
+  background-color: #dde1e7;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+  transition: all ease 0.5s;
+}
+.neu-card a {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  background-color: #c3d9d9;
+  border-radius: 20px;
+  transition: all ease 0.5s;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+.neu-card a:hover {
+  box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45),
+    inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+.neu-card p {
+  font-size: 1rem;
+  text-align: center;
+}

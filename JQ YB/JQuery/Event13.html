@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append to & Prepend to</title>
+    <style>
+        body{
+           font-family: arial;
+       }
+
+       #box{
+           padding: 10px;
+           width: 50%;
+           border: 2px solid #000;
+           background: lightgreen;
+       }
+   </style>
+</head>
+<body>
+    <h1>JQuery Append to & Prepend to Methods</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum, dolor<span> sit amet consectetur</span> adipisicing.</p>
+     </div>
+     <br>
+     <button id="appendBtn">AppendTo</button>
+     <button id="prependBtn">PrependTo</button>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script>
+          $(document).ready(function(){
+              $('#appendBtn').click(function(){
+                   $('<h3>AppendTo:Satyendra WaveXpay</h3>').appendTo('#box');
+              });
+
+              $('#prependBtn').click(function(){
+                   $('<h3>PrependTo:Satyendra WaveXpay</h3>').prependTo('#box');
+              });
+          });
+     </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Chaining Methods</title>
+    <style>
+        #box{
+          width: 350px;
+         
+          padding: 10px;
+          border: 1px solid #000;
+          background: lightgreen;
+          position: relative;
+        }
+        h1{
+            font-size: 25px;
+        }
+        </style>
+</head>
+<body>
+    <h1>JQuery Chaining Methods</h1>
+
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptas reiciendis nulla aut quibusdam, quasi qui impedit repellat!</p>
+    </div>
+    <br>
+    <button id="animateBtn">Animate</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+           $('#animateBtn').click(function(){
+               $('#box').css('background','pink').slideUp(2000).slideDown(2000);
+           });
+        });
+    </script>
+</body>
+</html>

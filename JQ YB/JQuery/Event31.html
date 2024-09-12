@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Has() & Is() Methods</title>
+    <style>
+          #first{
+            border: 1px solid #000;
+            width: 40%;
+            padding: 10px;
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQuery Has() & Is() Methods</h1>
+    <div id="first">
+        <p>Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit.</b> Iure, nisi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, nisi.</p>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li><span>Grapes</span></li>
+        <li>Orange</li>
+    </ul>
+    <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, exercitationem.</p>
+    <p>Lorem ipsum dolor sit amet<span class="test"> consectetur adipisicing elit.</span> Nobis, exercitationem.</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $('li').has('.test').css('background', 'red'); 
+        });
+    </script>
+</body>
+</html>

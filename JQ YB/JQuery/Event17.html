@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrap All & Wrap Inner Methods</title>
+    <style>
+         body{
+          font-family: arial;
+      }
+
+      #test{
+        background: pink;
+        padding: 5px;
+      }
+       
+      .red{
+        color: red;
+      }
+      /* #box{
+          padding: 10px;
+          width: 50%;
+          border: 2px solid #000;
+          background: lightgreen;
+      } */
+    </style>
+</head>
+<body>
+    <h1>JQuery Wrap All() & Wrap Inner() Methods</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing. amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur adipisicing. amet consectetur adipisicing.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing. amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur adipisicing. amet consectetur adipisicing.</p>
+     </div>
+     <br>
+     <button id="wrapAllBtn">WrapAll</button>   
+     <button id="wrapInnerBtn">WrapInner</button>  
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+     <script>
+        $(document).ready(function(){
+            $('#wrapAllBtn').click(function(){
+                  $('p').wrapAll('<div id="test"></div>');
+            });
+
+            $('#wrapInnerBtn').click(function(){
+                  $('h1').wrapInner('<span class="red"></span>');
+            });
+        });
+     </script>
+</body>
+</html>

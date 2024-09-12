@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Ancestors Methods</title>
+    <style>
+        #main-outer{
+              border: 1px solid #000;
+              width: 30%;
+              padding: 30px;
+              background: lightgreen;
+        }
+
+        #Outer{
+              border: 1px solid #000;
+              width: 60%;
+              padding: 40px;
+              background: lightcoral;
+        }
+        
+        #inner{
+              border: 1px solid #000;
+              width: 30%;
+              padding: 50px;
+              background: lightblue;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <div id="main-outer">
+    <div>
+        <h1>Main Outer</h1>
+        <div id="Outer">
+            <h2>Outer</h2>
+            <div id="inner">
+                <h2 id="child-head">Inner</h2>
+                <div>A</div>
+                <div>B</div>
+                <div id="child-C">C</div>
+                <div>D</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Val</title>
+</head>
+<body>
+    <form action="action" id="sform">
+        <label for="">Name</label> <input type="email" id="sname"><br/><br/>
+        <label for="">Class</label> <input type="text" id="sclass"><br/><br/>
+    
+         <input type="submit">
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#sname').val("Satyendra Babu");
+            $('#sclass').val("MCA_NEW");
+        });
+    </script>
+</body>
+</html>

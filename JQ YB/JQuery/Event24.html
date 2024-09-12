@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideUp, SlideDown & SlideToggle</title>
+    <style>
+        #box{
+          width: 40%;
+          padding: 10px;
+          border: 1px solid #000;
+          background: lightgreen;
+        }
+  </style>
+</head>
+<body>
+    <h1>SlideUp, SlideDown & SlideToggle Methods</h1>
+
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur<span> adipisicing elit. Illum odio aspernatur </span>neque explicabo placeat velit ipsam fuga quibusdam officiis quisquam.</p>
+    </div>
+    <br>
+    <button id="slideupBtn">SlideUp</button>
+    <button id="slidedownBtn">SlideDown</button>
+    <button id="slidetoggleBtn">SlideToggle</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+      <script>
+            $(document).ready(function(){
+                $('#slideupBtn').click(function(){
+                     $('#box').slideUp();
+                });
+
+                $('#slidedownBtn').click(function(){
+                     $('#box').slideDown();
+                });
+
+                $('#slidetoggleBtn').click(function(){
+                     $('#box').slideToggle();
+                });
+            });
+      </script>
+</body>
+</html>
